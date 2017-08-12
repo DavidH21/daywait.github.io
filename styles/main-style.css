@@ -1,0 +1,116 @@
+/*
+*8-11-17 - Add a wrapper div to be able to make footer stay at the bottom regardless at what zoom-level or height
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Makes border and padding apart of the width and height */
+}
+
+html, body {
+  height: 100%; /*New*/
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #f4f4f4;
+}
+
+/*Article Content Style*/
+.article-preview {
+  max-height: 300px;
+  padding:0 5px 5px;
+}
+.article-preview h1, .article-preview h2, .article-preview h3 {
+  text-align: center;
+}
+.article-preview p {
+  text-indent: 30px;
+}
+#article-main {
+  padding: 0 5px 5px;
+}
+#article-main h1, #article-main h2, #article-main h3 {
+  text-align: center;
+}
+#article-main p {
+  text-indent: 30px;
+}
+#article-main ul {
+  margin-left: 30px;
+  list-style-type: none;
+}
+
+#author-description {
+  width: 500px;
+  margin: 30px;
+  padding: 3px;
+  border: 1px black solid;
+}
+
+/*Container To Hold Everything*/
+#container { /*New*/
+  min-height: 100%;
+  position: relative;
+}
+
+/*Main Header*/
+#main-header {
+  padding-left: 25px;
+  background-color: #ffffff; /*New*/
+}
+/*new*/
+#main-header h1 a, #main-header h2 a, #main-header h3 a {
+  text-decoration: none;
+  color:inherit;
+}
+
+/*Main Navigation Menu*/
+#main-nav ul {
+  list-style-type: none;
+  overflow: hidden;
+  background-color: #545659;
+}
+#main-nav li {
+  float: left;
+}
+#main-nav li a {
+  display: block;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+#main-nav li a:hover {
+  background-color: #ef5353;
+}
+#main-nav #current-menu {
+  background-color: #ef5353;
+}
+
+/*Main Content Box*/
+#main-content {
+  margin: 10px auto 0; /*New*/
+  padding-bottom: 23px; /*Must be the same height as main-footer*/ /*New*/
+  width: 800px;
+  border-top: none;
+  border-bottom: none;
+  background-color: #ffffff; /*New*/
+}
+/*new*/
+#main-content h1 a, #main-content h2 a, #main-content h3 a {
+  color: black;
+  text-decoration: none;
+}
+/*new*/
+#main-content h1 a:hover, #main-content h2 a:hover, #main-content h3 a:hover {
+  color: blue;
+}
+
+/*Main Footer*/
+#main-footer {
+  background-color: #ffffff; /*New*/
+  height: 23px; /*Must be the same height as padding-bottom in main-content*/ /*New*/
+  width: 100%; /*New*/
+  position: absolute; /*New*/
+  bottom: 0; /*New*/
+}
