@@ -1,38 +1,36 @@
 <!DOCTYPE html>
-<html>
-<head lang="en">
+<html lang="en">
+<head>
   <meta charset="utf-8">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/main-style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
   <title>Homepage</title>
 </head>
+
 <body>
-  <header>
-    <h1>Day Wait's Blog</h1>
-  </header>
+  <div id="container">
+    <header id="main-header">
+      <h1><a href="index.html">Day Wait's Blog</a></h1>
+    </header>
 
-  <nav id="nav-menu">
-    <ul>
-      <li class="current-menu"><a href="index.html">Home</a></li>
-      <li><a href="pages/nav/about.html">About</a></li>
-    </ul>
-  </nav>
+    <nav id="main-nav">
+      <ul>
+        <li id="current-menu"><a href="index.html">Home</a></li>
+        <li><a href="pages/nav/about/about.html">About</a></li>
+      </ul>
+    </nav>
 
-  <main>
-    <article>
-      <h1>Welcome To My Blog!</h1>
-      <p>
-        This blog is for me to practice my web development and talk about my love of manga!
-      </p>
-    </article>
-  </main>
+    <main id="main-content">
+      <article class="article-preview">
+        <h1><a href="pages/webtoon/2017/04/08/review-unordinary/unordinary.html">Recommended Manga Of The Week #1 - unOrdinary</a></h1>
+        <p><time datetime="2017-04-08">April 8, 2017</time></p>
+        <p>This webtoon is about a high school boy, named John, living in a world where everyone has powers. The strong pick on the weak and the weak accept this as a way of life and try their best to live in this status quo. John is a boy who is trying to change the status quo by showing everyone that every person is of equal value even though he is born without any powers in a world where power is everything. <a href="pages/webtoon/2017/04/08/review-unordinary/unordinary.html">Read More.</a></p>
+      </article>
+    </main>
 
-  <footer>
-    <hr>
-    <section id="author-description">
-      I'm Day Wait who created this blog to learn how to web program. I have been learning web programming on and off for the past few years. I finally decided to push myself to put my web programming skills to the test. And that's how I began this manga blog website.
-      <p>Message me at daywait7@gmail.com</p>
-    </section>
-  </footer>
+    <footer id="main-footer">
+      <p>Contact me at daywait7@gmail.com</p>
+    </footer>
+  </div>
 </body>
 </html>
