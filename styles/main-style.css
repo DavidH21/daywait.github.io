@@ -1,6 +1,4 @@
-/*
-*8-11-17 - Add a wrapper div to be able to make footer stay at the bottom regardless at what zoom-level or height
-*/
+/*last edited 8-20-17*/
 * {
   margin: 0;
   padding: 0;
@@ -8,18 +6,19 @@
 }
 
 html, body {
-  height: 100%; /*New*/
+  height: 100%;
 }
-
 body {
   font-family: 'Open Sans', sans-serif;
   background-color: #f4f4f4;
 }
 
-/*Article Content Style*/
+/*******Article Content Style*******/
+/* article-preview is used to style recommendation boxes in homepage*/
 .article-preview {
   max-height: 300px;
   padding:0 5px 5px;
+  overflow: hidden; /*Used to hide and warn when there's too much text*/
 }
 .article-preview h1, .article-preview h2, .article-preview h3 {
   text-align: center;
@@ -27,8 +26,9 @@ body {
 .article-preview p {
   text-indent: 30px;
 }
+/*article-main used to style full-reviews; similar to article-preview*/
 #article-main {
-  padding: 0 5px 5px;
+  padding: 0 10px 5px; /* NOTE: changed left and right paddinf to 10px from 5px */
 }
 #article-main h1, #article-main h2, #article-main h3 {
   text-align: center;
@@ -40,32 +40,36 @@ body {
   margin-left: 30px;
   list-style-type: none;
 }
-
+/*To style the section about author in reviews*/
 #author-description {
   width: 500px;
-  margin: 30px;
-  padding: 3px;
+  margin: 20px; /* NOTE: Changed margin from 30px to 20px */
+  padding: 5px; /* NOTE: Changed to 5px instead of 4px*/
   border: 1px black solid;
 }
 
-/*Container To Hold Everything*/
-#container { /*New*/
-  min-height: 100%;
+/*******Container To Hold Everything*******/
+#main-wrapper { /* NOTE: New Name */
+  min-height: 100%; /*To force default size to match screen of device for footer to stay at the bottom*/
   position: relative;
 }
 
-/*Main Header*/
+/*******Main Header*******/
 #main-header {
   padding-left: 25px;
-  background-color: #ffffff; /*New*/
+  background-color: #ffffff;
 }
-/*new*/
-#main-header h1 a, #main-header h2 a, #main-header h3 a {
+#main-header h1 a {
   text-decoration: none;
-  color:inherit;
+  color: black; /* NOTE: Changed from inherit to black */
 }
+/* TODO: Deleted because only h1 will ever be in the main header */
+ /*#main-header h2 a, #main-header h3 a {
+   text-decoration: none;
+   color: black;
+ }*/
 
-/*Main Navigation Menu*/
+/*******Main Navigation Menu*******/
 #main-nav ul {
   list-style-type: none;
   overflow: hidden;
@@ -87,30 +91,32 @@ body {
   background-color: #ef5353;
 }
 
-/*Main Content Box*/
+/*******Main Content Box*******/
 #main-content {
-  margin: 10px auto 0; /*New*/
-  padding-bottom: 23px; /*Must be the same height as main-footer*/ /*New*/
+  margin: 10px auto; /*edited - margin-bottom is now 10px instead of 0*/ /* TODO:  */
+  /*padding-bottom: 23px; Must be the same height as main-footer */ /*Deleted*/ /* TODO:  */
+  padding: 1px 0; /*First and last children's (author-description) margin now affect height*/ /* NOTE: NEW */
   width: 800px;
-  border-top: none;
-  border-bottom: none;
-  background-color: #ffffff; /*New*/
+  /*border-top: none; */ /*Deleted - forgot to get rid of when borders were removed*/ /* TODO:  */
+  /*border-bottom: none;*/ /*Deleted - forgot to get rid of when borders were removed*/ /* TODO:  */
+  background-color: #ffffff;
 }
-/*new*/
 #main-content h1 a, #main-content h2 a, #main-content h3 a {
   color: black;
   text-decoration: none;
 }
-/*new*/
 #main-content h1 a:hover, #main-content h2 a:hover, #main-content h3 a:hover {
   color: blue;
 }
 
-/*Main Footer*/
+/*******Main Footer*******/
 #main-footer {
-  background-color: #ffffff; /*New*/
-  height: 23px; /*Must be the same height as padding-bottom in main-content*/ /*New*/
-  width: 100%; /*New*/
-  position: absolute; /*New*/
-  bottom: 0; /*New*/
+  background-color: #ffffff;
+  /*height: 23px; Must be the same height as padding-bottom in main-content*/ /* TODO: Deleted*/
+  width: 100%;
+  position: absolute; /*Used to keep footer at the bottom when not enough content*/
+  bottom: 0;
+}
+#main-footer-wrapper { /*New*/
+  height: 23px; /*This is the default height of main-footer*/
 }
