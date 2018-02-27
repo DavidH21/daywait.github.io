@@ -1,8 +1,8 @@
-/*last edited 8-20-17*/
+/* Last updated 2/26/18*/
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; /* Makes border and padding apart of the width and height */
+  box-sizing: border-box; /* Makes border and padding a part of the width and height */
 }
 
 html, body {
@@ -14,7 +14,7 @@ body {
 }
 
 /*******Article Content Style*******/
-/* article-preview is used to style recommendation boxes in homepage*/
+/* .article-preview is used to style recommendation article boxes in homepage*/
 .article-preview {
   max-height: 300px;
   padding:0 5px 5px;
@@ -28,7 +28,7 @@ body {
 }
 /*article-main used to style full-reviews; similar to article-preview*/
 #article-main {
-  padding: 0 10px 5px; /* NOTE: changed left and right paddinf to 10px from 5px */
+  padding: 0 10px 5px;
 }
 #article-main h1, #article-main h2, #article-main h3 {
   text-align: center;
@@ -43,13 +43,13 @@ body {
 /*To style the section about author in reviews*/
 #author-description {
   width: 500px;
-  margin: 20px; /* NOTE: Changed margin from 30px to 20px */
-  padding: 5px; /* NOTE: Changed to 5px instead of 4px*/
+  margin: 20px;
+  padding: 5px;
   border: 1px black solid;
 }
 
 /*******Container To Hold Everything*******/
-#main-wrapper { /* NOTE: New Name */
+#main-wrapper {
   min-height: 100%; /*To force default size to match screen of device for footer to stay at the bottom*/
   position: relative;
 }
@@ -61,13 +61,8 @@ body {
 }
 #main-header h1 a {
   text-decoration: none;
-  color: black; /* NOTE: Changed from inherit to black */
+  color: black;
 }
-/* TODO: Deleted because only h1 will ever be in the main header */
- /*#main-header h2 a, #main-header h3 a {
-   text-decoration: none;
-   color: black;
- }*/
 
 /*******Main Navigation Menu*******/
 #main-nav ul {
@@ -93,12 +88,10 @@ body {
 
 /*******Main Content Box*******/
 #main-content {
-  margin: 10px auto; /*edited - margin-bottom is now 10px instead of 0*/ /* TODO:  */
-  /*padding-bottom: 23px; Must be the same height as main-footer */ /*Deleted*/ /* TODO:  */
-  padding: 1px 0; /*First and last children's (author-description) margin now affect height*/ /* NOTE: NEW */
+  margin: 10px auto;
+  padding: 1px 0; /*First and last children's (Particularly #author-description) margin now affect #main-content's padding*/
+  /*NOTE: NEW: *//*NOTE: Children's Margin won't affect parent's padding if parent's padding is 0px, but margin can still bleed outside parent's "seen" parameter*/
   width: 800px;
-  /*border-top: none; */ /*Deleted - forgot to get rid of when borders were removed*/ /* TODO:  */
-  /*border-bottom: none;*/ /*Deleted - forgot to get rid of when borders were removed*/ /* TODO:  */
   background-color: #ffffff;
 }
 #main-content h1 a, #main-content h2 a, #main-content h3 a {
@@ -112,11 +105,11 @@ body {
 /*******Main Footer*******/
 #main-footer {
   background-color: #ffffff;
-  /*height: 23px; Must be the same height as padding-bottom in main-content*/ /* TODO: Deleted*/
   width: 100%;
   position: absolute; /*Used to keep footer at the bottom when not enough content*/
   bottom: 0;
+  height: 23px; /* NOTE: New */ /*Must be the same size as #main-footer-wrapper*/
 }
-#main-footer-wrapper { /*New*/
+#main-footer-wrapper {
   height: 23px; /*This is the default height of main-footer*/
 }
