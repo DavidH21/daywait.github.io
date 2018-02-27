@@ -1,0 +1,19 @@
+2-26-18
+Important Changes:
+- New article
+
+Minor Changes:
+- Fixed comment typo. apart -> a part
+- Changed .article-preview class comment to sound more precise
+- Changed #main-nav comments to be more precise
+- Changed title. Uses roman letters for Chinese title instead of Chinese characters
+- Changed small comment in #main-content
+
+Files Changed:
+- index.html
+- main-style.css
+- template.html
+- tales-of-demons-and-gods.html
+
+Changes:
+- #main-footer now has a defined height;
