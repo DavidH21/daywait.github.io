@@ -1,19 +1,15 @@
-2-26-18
+4/7/18
 Important Changes:
-- New article
+
+Changes:
+- Created a new article
+- Updated main page to preview article
 
 Minor Changes:
-- Fixed comment typo. apart -> a part
-- Changed .article-preview class comment to sound more precise
-- Changed #main-nav comments to be more precise
-- Changed title. Uses roman letters for Chinese title instead of Chinese characters
-- Changed small comment in #main-content
+- Updated main-style.css notes. Deleted old "NEW" comments
+- Updated main-style.css comment. Added explanation for overflow: hidden for the navigation bar.
 
 Files Changed:
 - index.html
 - main-style.css
-- template.html
-- tales-of-demons-and-gods.html
-
-Changes:
-- #main-footer now has a defined height;
+- NEW file: the-scholars-reincarnation.html
