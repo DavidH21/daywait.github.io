@@ -1,4 +1,4 @@
-/* Last updated 2/26/18*/
+/* Last updated 4/7/18*/
 * {
   margin: 0;
   padding: 0;
@@ -67,7 +67,7 @@ body {
 /*******Main Navigation Menu*******/
 #main-nav ul {
   list-style-type: none;
-  overflow: hidden;
+  overflow: hidden; /*TODO NEW*/ /* NOTE: Link explains why overflow: hidden is needed. https://stackoverflow.com/questions/16568272/why-doesnt-the-height-of-a-container-element-increase-if-it-contains-floated-el */
   background-color: #545659;
 }
 #main-nav li {
@@ -90,7 +90,7 @@ body {
 #main-content {
   margin: 10px auto;
   padding: 1px 0; /*First and last children's (Particularly #author-description) margin now affect #main-content's padding*/
-  /*NOTE: NEW: *//*NOTE: Children's Margin won't affect parent's padding if parent's padding is 0px, but margin can still bleed outside parent's "seen" parameter*/
+  /*NOTE: Children's Margin won't affect parent's padding if parent's padding is 0px, but margin can still bleed outside parent's "seen" parameter*/
   width: 800px;
   background-color: #ffffff;
 }
@@ -108,7 +108,7 @@ body {
   width: 100%;
   position: absolute; /*Used to keep footer at the bottom when not enough content*/
   bottom: 0;
-  height: 23px; /* NOTE: New */ /*Must be the same size as #main-footer-wrapper*/
+  height: 23px; /*Must be the same size as #main-footer-wrapper*/
 }
 #main-footer-wrapper {
   height: 23px; /*This is the default height of main-footer*/
