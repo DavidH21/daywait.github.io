@@ -1,0 +1,15 @@
+4/7/18
+Important Changes:
+
+Changes:
+- Created a new article
+- Updated main page to preview article
+
+Minor Changes:
+- Updated main-style.css notes. Deleted old "NEW" comments
+- Updated main-style.css comment. Added explanation for overflow: hidden for the navigation bar.
+
+Files Changed:
+- index.html
+- main-style.css
+- NEW file: the-scholars-reincarnation.html
