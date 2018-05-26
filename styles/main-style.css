@@ -32,6 +32,7 @@ body {
 }
 #article-main h1, #article-main h2, #article-main h3 {
   text-align: center;
+  margin: 3px /* TODO: New. Added margin 5/25/18 */
 }
 #article-main p {
   text-indent: 30px;

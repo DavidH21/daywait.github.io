@@ -1,0 +1,16 @@
+05/25/18
+Important Changes:
+
+Changes:
+- Created a new article
+- Updated main page to preview article
+
+Minor Changes:
+- Added new comment to text-font in template.html
+- Added a margin to h1-h3 headers in main-articles
+
+Files Changed:
+- index.html
+- NEW HTML file: tower-of-god.html
+- template.html
+- main-style.css
