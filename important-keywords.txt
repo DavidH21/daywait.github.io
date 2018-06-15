@@ -1,0 +1,15 @@
+/* XXX:  Means FIXME, HACK, OR TODO
+    * Something that's not implemented completely correctly.
+    * Something that should be fixed later on.
+    * Highlighting a possible problem spot.
+    * Something you're not sure about, a question.
+*/
+
+/* BUG:  */
+/* NOTE:  */
+/* FIXME:  */
+/* HACK:  */
+/* QUESTION:  */
+/* REVIEW:  */
+/* TODO: */
+/* IDEA:  */
